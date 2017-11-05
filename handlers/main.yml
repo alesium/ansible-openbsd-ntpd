@@ -1,0 +1,5 @@
+- name: enable ntpd
+  service:
+    name: "{{ openbsd_ntpd_service_name }}"
+    enabled: "yes"
+    state: "started"

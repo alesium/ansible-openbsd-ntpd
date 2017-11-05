@@ -1,0 +1,10 @@
+- name: copy ntpd.conf
+  tags: openbsd-ntpd
+  template:
+    src: "{{ openbsd_ntpd_conf_src }}"
+    dest: "{{ openbsd_ntpd_conf_dest }}"
+    mode: "0644"
+    owner: "root"
+    group: "wheel"
+    backup: "yes"
+  notify: enable ntpd
