@@ -7,4 +7,4 @@
     owner: "root"
     group: "wheel"
     backup: "yes"
-  notify: enable ntpd
+  notify: restart ntpd

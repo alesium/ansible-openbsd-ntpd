@@ -1,5 +1,5 @@
-- name: enable ntpd
+- name: restart ntpd
   service:
     name: "{{ openbsd_ntpd_service_name }}"
     enabled: "yes"
-    state: "started"
+    state: "restarted"
